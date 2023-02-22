@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { MenuContainer, MenuWrapper } from './styled';
+import { MenuContainer, Brand, MenuElements } from './styled';
 
 export const Menu = () => {
-  return(
+  return (
     <MenuContainer>
-      <MenuWrapper>menu</MenuWrapper>
+      <Brand><h1>Media</h1></Brand>
+      <MenuElements><p>content</p></MenuElements>
     </MenuContainer>
   )
 }

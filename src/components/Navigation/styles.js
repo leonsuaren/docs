@@ -7,8 +7,7 @@ export const Navbar = styled.nav`
   box-shadow: 0px 0px 5px 5px rgb(96, 93, 93);
 
   @media (min-width: 992px) {
-    display: grid;
-    grid-template-columns: 10% 90%;
+    display: flex;
   }
 
   @media (min-width: 668px) and (max-width: 991px) {
