@@ -17,11 +17,16 @@ export const Navbar = styled.nav`
 
   @media (min-width: 451px) and (max-width: 667px) {
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 80% 20%;
   }
 
   @media (min-width: 350px) and (max-width: 450px) {
     display: grid;
     grid-template-columns: 80% 20%;
+  }
+
+  @media (max-width: 349px) {
+    display: grid;
+    grid-template-columns: 70% 30%;
   }
 `;

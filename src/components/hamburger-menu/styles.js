@@ -19,12 +19,26 @@ export const HamburgerWrapper = styled.div`
     justify-content: center;
    }
 
-   @media (min-width: 350px) and (max-width: 649px) {
+   @media (min-width: 451px) and (max-width: 667px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+   @media (min-width: 350px) and (max-width: 450px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
    }
+
+   @media (max-width: 349px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const HamburgerButton = styled.button`
