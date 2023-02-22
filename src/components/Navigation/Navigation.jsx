@@ -1,21 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HamburgerMenu } from '../../components/hamburger-menu';
+import { Menu } from '../../components/menu';
 
-import { Navbar, NavbarContent, NavbarHamburger } from './styles.js';
+import { Navbar } from './styles.js';
 
 export const Navigation = () => {
+  const [openMenu, setOpenMenu] = useState(true);
+
+  const handleOnOpenMenu = () => {
+    setOpenMenu(s => !s);
+  }
+
   return (
     <Navbar>
-      <NavbarContent>
-        <h3>Title</h3>
-        <div>
-          menu
-        </div>
-      </NavbarContent>
-      <NavbarHamburger>
-        <div />
-        <HamburgerMenu />
-      </NavbarHamburger>
+      <Menu />
+      <HamburgerMenu onClick={handleOnOpenMenu} openMenu={openMenu}/>
     </Navbar>
   )
 }

@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const HamburgerWrapper = styled.div`
   width: 100%;
@@ -7,6 +7,24 @@ export const HamburgerWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (min-width: 992px) {
+    display: none;
+    }
+
+  @media (min-width: 650px) and (max-width: 991px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   @media (min-width: 350px) and (max-width: 649px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
 `;
 
 export const HamburgerButton = styled.button`
@@ -14,15 +32,8 @@ export const HamburgerButton = styled.button`
   cursor: pointer;
   background-color: transparent;
   position: relative;
-`;
-
-const rotateLineOne = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(90deg);
-  }
+  padding: 0;
+  margin: 0;
 `;
 
 const hamburgerAnimationOne = ({ openMenu }) => {
@@ -32,7 +43,7 @@ const hamburgerAnimationOne = ({ openMenu }) => {
       `
   } else {
     return css`
-    transform: rotate(45deg) translate(6px, 5px);
+      transform: rotate(45deg) translate(6px, 5px);
       `
   }
 };
@@ -72,8 +83,6 @@ export const LineOne = styled.div`
   transition: all .5s ease-in-out;
   ${hamburgerAnimationOne}
 `;
-
-
 
 export const LineTwo = styled.div`
   width: 40px;
