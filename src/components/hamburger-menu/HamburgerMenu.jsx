@@ -1,5 +1,5 @@
 import React from 'react';
-import { LineOne, LineTwo, LineThree, HamburgerWrapper, HamburgerButton } from './styles.js';
+import { LineOne, LineTwo, LineThree, HamburgerWrapper, HamburgerButton } from './styled.js';
 
 export const HamburgerMenu = ({ openMenu, onClick }) => {
 

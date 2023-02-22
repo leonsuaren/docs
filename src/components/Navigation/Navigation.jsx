@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+
 import { HamburgerMenu } from '../../components/hamburger-menu';
 import { Menu } from '../../components/menu';
+import { ResponsiveMenu } from '../../components/responsive-menu';
 
-import { Navbar } from './styles.js';
+import { Navbar } from './styled.js';
 
 export const Navigation = () => {
   const [openMenu, setOpenMenu] = useState(true);
@@ -15,6 +17,7 @@ export const Navigation = () => {
     <Navbar>
       <Menu />
       <HamburgerMenu onClick={handleOnOpenMenu} openMenu={openMenu}/>
+      <ResponsiveMenu openMenu={openMenu}/>
     </Navbar>
   )
 }

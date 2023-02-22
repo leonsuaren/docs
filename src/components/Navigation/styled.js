@@ -5,6 +5,7 @@ export const Navbar = styled.nav`
   height: 70px;
   background-color: rgb(247, 244, 244);
   box-shadow: 0px 0px 5px 5px rgb(96, 93, 93);
+  position: relative;
 
   @media (min-width: 992px) {
     display: flex;
