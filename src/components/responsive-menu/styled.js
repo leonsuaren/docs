@@ -19,6 +19,7 @@ export const ResponsiveMenuWrapper = styled.div`
   z-index: -1;
   min-height: 400px;
   width: 250px;
+  border-bottom: 10px solid rgb(88, 48, 163);
   background-color: rgb(247, 244, 244);
   box-shadow: 0px 0px 5px 5px rgb(96, 93, 93);
   ${menuAnimation}
@@ -31,28 +32,66 @@ export const ResponsiveMenuWrapper = styled.div`
   @media (min-width: 650px) and (max-width: 991px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
    }
 
    @media (min-width: 451px) and (max-width: 667px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
 
    @media (min-width: 350px) and (max-width: 450px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
    }
 
    @media (max-width: 349px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
+`;
+
+export const UnorderListMenu = styled.ul`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 400px;
+  margin: 0;
+  padding: 0;
+`
+
+export const ListItemMenuBrand = styled.li`
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+`;
+
+export const MenuItemBrand = styled.a`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;  
+
+export const ListItemMenuElement = styled.li`
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+`;
+
+export const MenuItem = styled.a`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;

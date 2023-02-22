@@ -65,12 +65,12 @@ const hamburgerAnimationOne = ({ openMenu }) => {
 const hamburgerAnimationTwo = ({ openMenu }) => {
   if (openMenu) {
     return css`
-      transform: translateX(0px);
+      scale: 1;
       opacity: 1;
     `
   } else {
     return css`
-      transform: translateX(-20px);
+      scale: 0;
       opacity: 0;
     `
   }
