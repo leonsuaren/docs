@@ -23,4 +23,36 @@ export const ResponsiveMenuWrapper = styled.div`
   box-shadow: 0px 0px 5px 5px rgb(96, 93, 93);
   ${menuAnimation}
   transition: top .5s ease-in-out;
+  
+  @media (min-width: 992px) {
+    display: none;
+    }
+
+  @media (min-width: 650px) and (max-width: 991px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   @media (min-width: 451px) and (max-width: 667px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+   @media (min-width: 350px) and (max-width: 450px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+
+   @media (max-width: 349px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
