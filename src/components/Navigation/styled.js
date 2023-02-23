@@ -4,7 +4,7 @@ export const Navbar = styled.nav`
   width: 100%;
   height: 70px;
   background-color: ${ props => props.theme.primaryColor  };
-  box-shadow: 0px 0px 5px 5px rgb(96, 93, 93);
+  box-shadow: ${ props => props.theme.primaryBoxShadow };
   position: relative;
 
   @media (min-width: 992px) {
@@ -18,7 +18,7 @@ export const Navbar = styled.nav`
 
   @media (min-width: 451px) and (max-width: 667px) {
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 90% 10%;
   }
 
   @media (min-width: 350px) and (max-width: 450px) {
