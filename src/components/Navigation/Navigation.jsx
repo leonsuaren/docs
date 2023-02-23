@@ -17,7 +17,7 @@ export const Navigation = () => {
     <Navbar>
       <Menu />
       <HamburgerMenu onClick={handleOnOpenMenu} openMenu={openMenu}/>
-      <ResponsiveMenu openMenu={openMenu}/>
+      <ResponsiveMenu onClick={handleOnOpenMenu} openMenu={openMenu}/>
     </Navbar>
   )
 }

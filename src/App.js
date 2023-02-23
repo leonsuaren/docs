@@ -7,7 +7,8 @@ import { theme } from './utils/theme';
 
 import { Navigation } from './components/Navigation';
 
-import { Home } from './views/Home';
+import { Home } from './views/home';
+import { Examples } from './views/examples';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Navigation />
         <Routes>
           <Route path='/' element={<Home />}/>
+          <Route path='examples' element={<Examples />}/>
         </Routes>
       </Router>
     </ThemeProvider>
