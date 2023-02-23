@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Navbar = styled.nav`
   width: 100%;
   height: 70px;
-  background-color: ${ props => props.theme.primaryColor  };
+  background-color: ${ props => props.theme.primaryColor };
   box-shadow: ${ props => props.theme.primaryBoxShadow };
   position: relative;
 

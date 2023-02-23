@@ -1,14 +1,19 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
+
+import { LinkStyled } from '../../utils/GlobalStyles'
 
 import { MenuContainer, Brand, MenuElements } from './styled';
 
 export const Menu = () => {
+  const params = useLocation();
+
   return (
     <MenuContainer>
-      <Brand><h1><a href='#home'>Media</a></h1></Brand>
+      <Brand><h1><LinkStyled isActive={params.pathname === '/'} to={'/'}>Media</LinkStyled></h1></Brand>
       <MenuElements>
-        <li><a>content</a></li>
-        <li><a>content</a></li>
+        <li><LinkStyled>content</LinkStyled></li>
+        <li><LinkStyled>content</LinkStyled></li>
       </MenuElements>
     </MenuContainer>
   )
