@@ -2,23 +2,19 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import { GlobalStyles } from './utils/GlobalStyles';
-import { theme } from './utils/theme';
-
-import { Navigation } from './components/Navigation';
-
-import { Home } from './views/home';
-import { Examples } from './views/examples';
+import * as com from './components';
+import * as uti from './utils';
+import * as vie from './views';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
+    <ThemeProvider theme={uti.theme}>
+      <uti.GlobalStyles />
       <Router>
-        <Navigation />
+        <com.Navigation />
         <Routes>
-          <Route path='/' element={<Home />}/>
-          <Route path='examples' element={<Examples />}/>
+          <Route path='/' element={<vie.Home />}/>
+          <Route path='examples' element={<vie.Examples />}/>
         </Routes>
       </Router>
     </ThemeProvider>
