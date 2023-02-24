@@ -10,9 +10,9 @@ export const Menu = () => {
 
   return (
     <MenuContainer>
-      <Brand><h1><LinkStyled isActive={params.pathname === '/'} to={'/'}>Media</LinkStyled></h1></Brand>
+      <Brand><h1><LinkStyled isactive={params.pathname === '/'} to={'/'}>Media</LinkStyled></h1></Brand>
       <MenuElements>
-        <li><LinkStyled isActive={params.pathname === '/examples'} to={'/examples'}>content</LinkStyled></li>
+        <li><LinkStyled isactive={params.pathname === '/examples'} to={'/examples'}>content</LinkStyled></li>
       </MenuElements>
     </MenuContainer>
   )

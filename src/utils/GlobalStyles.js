@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
-const Link = ({ children, ...props }) => {
+const Link = ({ children, isactive, ...props }) => {
   return(
     <ReactRouterLink {...props}>
       {children}
@@ -24,8 +24,8 @@ const Link = ({ children, ...props }) => {
   )
 }
 
-const isActive = ({ isActive }) => {
-  if (isActive) {
+const onIsActiveLink = ({ isactive }) => {
+  if (isactive) {
     return css`
       border-bottom: 4px solid ${props => props.theme.themeColor}
     `
@@ -37,5 +37,5 @@ export const LinkStyled = styled(Link)`
     cursor: pointer;
     font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: ${ props => props.theme.baseFontColor };
-    ${isActive}
+    ${onIsActiveLink}
 `;

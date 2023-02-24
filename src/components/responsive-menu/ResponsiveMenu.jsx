@@ -11,8 +11,8 @@ export const ResponsiveMenu = ({ openMenu, onClick }) => {
   return (
     <ResponsiveMenuWrapper openMenu={openMenu}>
       <UnorderListMenu>
-        <ListItemMenuBrand onClick={onClick} ><h1><LinkStyled isActive={params.pathname === '/'} to='/'>Media</LinkStyled></h1></ListItemMenuBrand>
-        <ListItemMenuElement><LinkStyled isActive={params.pathname === '/examples'} to='/examples'>Examples</LinkStyled></ListItemMenuElement>
+        <ListItemMenuBrand onClick={onClick} ><h1><LinkStyled isactive={params.pathname === '/'} to='/'>Media</LinkStyled></h1></ListItemMenuBrand>
+        <ListItemMenuElement onClick={onClick} ><LinkStyled isactive={params.pathname === '/examples'} to='/examples'>Examples</LinkStyled></ListItemMenuElement>
       </UnorderListMenu>
     </ResponsiveMenuWrapper>
   )
