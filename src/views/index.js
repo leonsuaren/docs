@@ -1,2 +1,2 @@
-import { Examples } from './examples';
-import { Home } from './home';
+export { Examples } from './examples';
+export { Home } from './home';

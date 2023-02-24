@@ -93,7 +93,7 @@ export const LineOne = styled.div`
   height: 4px;
   margin: 5px;
   border-radius: 5px;
-  background-color: rgb(143, 142, 145);
+  background-color: ${ props => props.theme.secondaryColor };
   transition: all .5s ease-in-out;
   ${hamburgerAnimationOne}
 `;
@@ -103,7 +103,7 @@ export const LineTwo = styled.div`
   height: 4px;
   margin: 5px;
   border-radius: 5px;
-  background-color: rgb(143, 142, 145);
+  background-color: ${ props => props.theme.secondaryColor };
   transition: all .5s ease-in-out;
   ${hamburgerAnimationTwo}
 `;
@@ -113,7 +113,7 @@ export const LineThree = styled.div`
   height: 4px;
   margin: 5px;
   border-radius: 5px;
-  background-color: rgb(143, 142, 145);
+  background-color: ${ props => props.theme.secondaryColor };
   transition: all .5s ease-in-out;
   ${hamburgerAnimationThree}
 `;
