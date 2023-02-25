@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { LinkStyled } from '../../utils/GlobalStyles';
+import * as uti from '../../utils';
 
 import { MenuContainer, Brand, MenuElements } from './styled';
 
@@ -10,9 +10,9 @@ export const Menu = () => {
 
   return (
     <MenuContainer>
-      <Brand><h1><LinkStyled isactive={params.pathname === '/'} to={'/'}>Media</LinkStyled></h1></Brand>
+      <Brand><h1><uti.LinkStyled isactive={params.pathname === '/'} to={'/'}>Media</uti.LinkStyled></h1></Brand>
       <MenuElements>
-        <li><LinkStyled isactive={params.pathname === '/examples'} to={'/examples'}>content</LinkStyled></li>
+        <li><uti.LinkStyled isactive={params.pathname === '/examples'} to={'/examples'}>content</uti.LinkStyled></li>
       </MenuElements>
     </MenuContainer>
   )

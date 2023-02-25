@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 
-import { HamburgerMenu } from '../../components/hamburger-menu';
-import { Menu } from '../../components/menu';
-import { ResponsiveMenu } from '../../components/responsive-menu';
+import * as com from '../../components';
 
 import { Navbar } from './styled.js';
 
@@ -14,10 +12,12 @@ export const Navigation = () => {
   }
 
   return (
-    <Navbar>
-      <Menu />
-      <HamburgerMenu onClick={handleOnOpenMenu} openMenu={openMenu}/>
-      <ResponsiveMenu onClick={handleOnOpenMenu} openMenu={openMenu}/>
-    </Navbar>
+    <Fragment>
+      <Navbar>
+        <com.Menu />
+        <com.HamburgerMenu onClick={handleOnOpenMenu} openMenu={openMenu} />
+      </Navbar>
+      <com.ResponsiveMenu onClick={handleOnOpenMenu} openMenu={openMenu} />
+    </Fragment>
   )
 }

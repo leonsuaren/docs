@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import { LinkStyled } from '../../utils/GlobalStyles';
+import * as uti from '../../utils';
 
 import { ResponsiveMenuWrapper, UnorderListMenu, ListItemMenuElement, ListItemMenuBrand, MenuItem, MenuItemBrand } from './styled';
 
@@ -11,8 +11,8 @@ export const ResponsiveMenu = ({ openMenu, onClick }) => {
   return (
     <ResponsiveMenuWrapper openMenu={openMenu}>
       <UnorderListMenu>
-        <ListItemMenuBrand onClick={onClick} ><h1><LinkStyled isactive={params.pathname === '/'} to='/'>Media</LinkStyled></h1></ListItemMenuBrand>
-        <ListItemMenuElement onClick={onClick} ><LinkStyled isactive={params.pathname === '/examples'} to='/examples'>Examples</LinkStyled></ListItemMenuElement>
+        <ListItemMenuBrand onClick={onClick} ><h1><uti.LinkStyled isactive={params.pathname === '/'} to='/'>Media</uti.LinkStyled></h1></ListItemMenuBrand>
+        <ListItemMenuElement onClick={onClick} ><uti.LinkStyled isactive={params.pathname === '/examples'} to='/examples'>Examples</uti.LinkStyled></ListItemMenuElement>
       </UnorderListMenu>
     </ResponsiveMenuWrapper>
   )

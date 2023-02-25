@@ -16,7 +16,7 @@ export const ResponsiveMenuWrapper = styled.div`
   position: absolute;
   right: 0;
   top: 0;
-  z-index: -1;
+  z-index: 0;
   min-height: 400px;
   width: 250px;
   border-bottom: 10px solid ${ props => props.theme.themeColor };
