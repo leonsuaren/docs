@@ -19,6 +19,9 @@ export const GlobalStyles = createGlobalStyle`
     list-style-type: none;
     margin: 0 20px;
   }
+  img {
+    width: 100%
+  }
 `;
 
 const Link = ({ children, isactive, ...props }) => {
