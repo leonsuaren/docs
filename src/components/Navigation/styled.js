@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Navbar = styled.nav`
-  width: 100%;
+  width: auto;
   height: 70px;
   background-color: ${ props => props.theme.primaryColor };
   box-shadow: ${ props => props.theme.primaryBoxShadow };

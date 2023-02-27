@@ -51,14 +51,22 @@ export const Home = () => {
         <li>
           <h5>not</h5>
           <p>Used to negate a media query, returning true if the query would otherwise return false</p>
+          <img src='/notOperator.png' alt='Not Operator' />
         </li>
         <li>
           <h5>and</h5>
           <p>Used for combining multiple media features together into a single media query, requiring each chained feature to return true for the query to be true</p>
+          <img src='/andOperator.png' alt='And Operator' />
         </li>
         <li>
           <h5>only</h5>
           <p>Applies a style only if an entire query matches.</p>
+          <img src='/onlyOperator.png' alt='Only Operator' />
+        </li>
+        <li>
+          <h5>or</h5>
+          <p>Technically using the <b>,</b> operator queries are treated like two separate media queries.</p>
+          <img src='/orOperator.png' alt='or Operator' />
         </li>
       </ul>
     </lay.HomeLayout>
