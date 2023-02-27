@@ -12,7 +12,7 @@ export const Menu = () => {
     <MenuContainer>
       <Brand><h1><uti.LinkStyled isactive={params.pathname === '/'} to={'/'}>Media</uti.LinkStyled></h1></Brand>
       <MenuElements>
-        <li><uti.LinkStyled isactive={params.pathname === '/examples'} to={'/examples'}>content</uti.LinkStyled></li>
+        <li><uti.LinkStyled isactive={params.pathname === '/examples'} to={'/examples'}>Examples</uti.LinkStyled></li>
       </MenuElements>
     </MenuContainer>
   )

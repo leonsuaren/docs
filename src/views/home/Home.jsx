@@ -5,7 +5,7 @@ import * as styled from './styled';
 
 export const Home = () => {
   return (
-    <lay.HomeLayout>
+    <lay.Layout>
       <styled.Header>@Media</styled.Header>
       <styled.Text>The <b>@media CSS</b> at-rule can be used to apply part of a style sheet based on the result of one or more media queries. With it, you specify a media query and a block of <b>CSS</b> to apply to the document if and only if the media query matches the device on which the content is being used.</styled.Text>
       <h3>CSS2 Introduced <b>media type</b>s</h3>
@@ -69,6 +69,6 @@ export const Home = () => {
           <img src='/orOperator.png' alt='or Operator' />
         </li>
       </ul>
-    </lay.HomeLayout>
+    </lay.Layout>
   )
 }
