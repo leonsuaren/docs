@@ -68,15 +68,7 @@ export const ListItemMenuBrand = styled.li`
   justify-content: center;
   margin: 0;
   padding: 0;
-`;
-
-export const MenuItemBrand = styled.a`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;  
+`; 
 
 export const ListItemMenuElement = styled.li`
   width: 100%;
@@ -86,12 +78,4 @@ export const ListItemMenuElement = styled.li`
   justify-content: center;
   margin: 0;
   padding: 0;
-`;
-
-export const MenuItem = styled.a`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;

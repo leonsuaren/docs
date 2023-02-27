@@ -18,6 +18,18 @@ export const LeftArrowSide = styled.div`
   border-left: 3px solid ${props => props.theme.themeColor};
   display: flex;
   align-items: center;
+
+  @media (min-width: 451px) and (max-width: 667px) {
+    padding-right: 10px;
+  }
+
+   @media (min-width: 350px) and (max-width: 450px) {
+    padding-right: 10px;
+   }
+
+   @media (max-width: 349px) {
+    padding-right: 10px;
+  }
 `;
 
 export const WidthContainer = styled.div`
@@ -28,6 +40,17 @@ export const WidthContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (min-width: 451px) and (max-width: 667px) {
+    font-size: .8rem;
+  }
+
+   @media (min-width: 350px) and (max-width: 450px) {
+    font-size: .8rem;
+   }
+
+   @media (max-width: 349px) {
+    font-size: .8rem;
+  }
 `;
 
 export const RightArrowSide = styled.div`
@@ -38,6 +61,18 @@ export const RightArrowSide = styled.div`
   border-right: 3px solid ${props => props.theme.themeColor};
   display: flex;
   align-items: center;
+
+  @media (min-width: 451px) and (max-width: 667px) {
+    padding-left: 10px;
+  }
+
+   @media (min-width: 350px) and (max-width: 450px) {
+    padding-left: 10px;
+   }
+
+   @media (max-width: 349px) {
+    padding-left: 10px;
+  }
 `;
 
 export const Line = styled.div`

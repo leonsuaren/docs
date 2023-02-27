@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 
 import * as uti from '../../utils';
 
-import { ResponsiveMenuWrapper, UnorderListMenu, ListItemMenuElement, ListItemMenuBrand, MenuItem, MenuItemBrand } from './styled';
+import { ResponsiveMenuWrapper, UnorderListMenu, ListItemMenuElement, ListItemMenuBrand } from './styled';
 
 export const ResponsiveMenu = ({ openMenu, onClick }) => {
   const params = useLocation();

@@ -7,7 +7,7 @@ export const MediaArrows = () => {
     const [size, setSize] = useState([0, 0]);
     useLayoutEffect(() => {
       function updateSize() {
-        setSize([window.innerWidth, window.innerHeight]);
+        setSize([window.innerWidth]);
       }
       window.addEventListener('resize', updateSize);
       updateSize();
@@ -15,7 +15,7 @@ export const MediaArrows = () => {
     }, []);
     return size;
   }
-  const [windowWidth, windowHeight] = useWindowSize();
+  const [windowWidth] = useWindowSize();
 
   return (
     <styled.ArrowsWrapper>
