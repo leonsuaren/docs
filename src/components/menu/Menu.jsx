@@ -10,9 +10,10 @@ export const Menu = () => {
 
   return (
     <MenuContainer>
-      <Brand><h1><uti.LinkStyled isactive={params.pathname === '/'} to={'/'}>Media</uti.LinkStyled></h1></Brand>
+      <Brand><h1><uti.LinkStyled isactive={params.pathname === '/'} to={'/'}>Docs</uti.LinkStyled></h1></Brand>
       <MenuElements>
-        <li><uti.LinkStyled isactive={params.pathname === '/examples'} to={'/examples'}>Examples</uti.LinkStyled></li>
+        <li><uti.LinkStyled isactive={params.pathname === '/css-content'} to={'/css-content'}>CSS</uti.LinkStyled></li>
+        <li><uti.LinkStyled isactive={params.pathname === '/javascript'} to={'/javascript'}>JAVASCRIPT</uti.LinkStyled></li>
       </MenuElements>
     </MenuContainer>
   )

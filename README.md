@@ -7,5 +7,4 @@
  **An overview of how _Media Query_ works and some examples.** 
 
   ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/leonsuaren/media)
-  https://img.shields.io/badge/React-18.2.0-yellow
  </div>

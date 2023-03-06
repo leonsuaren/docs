@@ -15,6 +15,7 @@ function App() {
         <Routes>
           <Route path='/' element={<vie.Home />}/>
           <Route path='examples' element={<vie.Examples />}/>
+          <Route path='css-content' element={<vie.CssContent />}/>
         </Routes>
         <com.Footer />
       </Router>
