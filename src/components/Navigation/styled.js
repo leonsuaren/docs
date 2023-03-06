@@ -4,7 +4,7 @@ export const Navbar = styled.nav`
   width: auto;
   height: 70px;
   background-color: ${ props => props.theme.primaryColor };
-  box-shadow: ${ props => props.theme.primaryBoxShadow };
+  border: 1px solid ${ props => props.theme.secondaryColor };
   position: relative;
   z-index: 1;
 

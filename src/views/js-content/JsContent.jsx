@@ -1,7 +1,9 @@
 import React from 'react';
 
+import * as lay from '../../layout';
+
 export const JsContent = () => {
   return (
-    <div>JS-Content</div>
+    <lay.Layout>JS-Content</lay.Layout>
   )
 }

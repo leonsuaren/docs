@@ -21,7 +21,6 @@ export const ResponsiveMenuWrapper = styled.div`
   width: 250px;
   border-bottom: 10px solid ${ props => props.theme.themeColor };
   background-color:  ${ props => props.theme.primaryColor };
-  box-shadow: ${ props => props.theme.primaryBoxShadow };
   ${menuAnimation}
   transition: top .5s ease-in-out;
   
