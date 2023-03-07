@@ -2,9 +2,9 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+import * as vie from './views';
 import * as com from './components';
 import * as uti from './utils';
-import * as vie from './views';
 
 function App() {
   return (

@@ -1,10 +1,11 @@
 import React from 'react';
-import { FooterContainer } from './styled';
+
+import * as styled from './index';
 
 export const Footer = () => {
   return(
-    <FooterContainer>
+    <styled.FooterContainer>
       Footer
-    </FooterContainer>
+    </styled.FooterContainer>
   )
 }

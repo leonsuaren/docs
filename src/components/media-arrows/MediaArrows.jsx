@@ -1,6 +1,6 @@
 import React, { useLayoutEffect, useState } from 'react';
 
-import * as styled from './styled';
+import * as styled from './index';
 
 export const MediaArrows = () => {
   const useWindowSize = () => {

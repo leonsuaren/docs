@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 
 import * as com from '../../components';
 import * as lay from '../../layout';
-import * as styled from './styled';
+import * as styled from './index';
 
 export const Examples = () => {
   return (

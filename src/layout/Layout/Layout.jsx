@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as styled from './styled';
+import * as styled from './index';
 
 export const Layout = ({ children }) => {
   return (

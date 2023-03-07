@@ -1,16 +1,16 @@
 import React from 'react';
 
-import { LineOne, LineTwo, LineThree, HamburgerWrapper, HamburgerButton } from './styled.js';
+import * as styled from './index';
 
 export const HamburgerMenu = ({ openMenu, onClick }) => {
 
   return (
-    <HamburgerWrapper>
-      <HamburgerButton onClick={onClick}>
-        <LineOne openMenu={openMenu}/>
-        <LineTwo openMenu={openMenu}/>
-        <LineThree openMenu={openMenu}/>
-      </HamburgerButton>
-    </HamburgerWrapper>
+    <styled.HamburgerWrapper>
+      <styled.HamburgerButton onClick={onClick}>
+        <styled.LineOne openMenu={openMenu}/>
+        <styled.LineTwo openMenu={openMenu}/>
+        <styled.LineThree openMenu={openMenu}/>
+      </styled.HamburgerButton>
+    </styled.HamburgerWrapper>
   )
 }
