@@ -5,6 +5,14 @@ export const MenuContainer = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: 20% 80%;
+  
+  @media (min-width: 992px) {
+    margin: 0 150px;
+    }
+
+  @media (min-width: 650px) and (max-width: 991px) {
+    margin: 0 50px
+   }
 `;
 
 export const Brand = styled.div`

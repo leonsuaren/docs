@@ -1,6 +1,6 @@
 import React, { useState, Fragment } from 'react';
 
-import * as com from '../../components';
+import * as com from '..';
 
 import { Navbar } from './styled.js';
 

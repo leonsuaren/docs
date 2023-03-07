@@ -18,7 +18,6 @@ function App() {
           <Route path='js-content' element={<vie.JsContent />} />
           <Route path='examples' element={<vie.Examples />}/>
         </Routes>
-        <com.Footer />
       </Router>
     </ThemeProvider>
   );

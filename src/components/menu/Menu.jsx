@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import * as uti from '../../utils';
+import * as com from '../../components';
 
 import { MenuContainer, Brand, MenuElements } from './styled';
 
@@ -10,10 +10,10 @@ export const Menu = () => {
 
   return (
     <MenuContainer>
-      <Brand><h1><uti.LinkStyled isactive={params.pathname === '/'} to={'/'}>Docs</uti.LinkStyled></h1></Brand>
+      <Brand><h1><com.LinkButton isactive={params.pathname === '/'} to={'/'} text={'DOCS'} /></h1></Brand>
       <MenuElements>
-        <li><uti.LinkStyled isactive={params.pathname === '/css-content'} to={'/css-content'}>CSS</uti.LinkStyled></li>
-        <li><uti.LinkStyled isactive={params.pathname === '/js-content'} to={'/js-content'}>JAVASCRIPT</uti.LinkStyled></li>
+        <li><com.LinkButton isactive={params.pathname === '/css-content'} to={'/css-content'} text={'CSS'} /></li>
+        <li><com.LinkButton isactive={params.pathname === '/js-content'} to={'/js-content'} text={'JAVASCRIPT'} /></li>
       </MenuElements>
     </MenuContainer>
   )

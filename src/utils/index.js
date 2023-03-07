@@ -1,2 +1,2 @@
-export { GlobalStyles, LinkStyled } from './GlobalStyles';
+export { GlobalStyles } from './GlobalStyles';
 export { theme } from './theme';

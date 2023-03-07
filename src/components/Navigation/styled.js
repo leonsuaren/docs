@@ -6,7 +6,7 @@ export const Navbar = styled.nav`
   background-color: ${ props => props.theme.primaryColor };
   border: 1px solid ${ props => props.theme.secondaryColor };
   position: relative;
-  z-index: 1;
+  z-index: 2;
 
   @media (min-width: 992px) {
     display: flex;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-import * as uti from '../../utils';
+import * as com from '../../components';
 
 import { ResponsiveMenuWrapper, UnorderListMenu, ListItemMenuElement, ListItemMenuBrand } from './styled';
 
@@ -11,8 +11,9 @@ export const ResponsiveMenu = ({ openMenu, onClick }) => {
   return (
     <ResponsiveMenuWrapper openMenu={openMenu}>
       <UnorderListMenu>
-        <ListItemMenuBrand onClick={onClick} ><h1><uti.LinkStyled isactive={params.pathname === '/'} to='/'>Media</uti.LinkStyled></h1></ListItemMenuBrand>
-        <ListItemMenuElement onClick={onClick} ><uti.LinkStyled isactive={params.pathname === '/examples'} to='/examples'>Examples</uti.LinkStyled></ListItemMenuElement>
+        <ListItemMenuBrand onClick={onClick} ><h1><com.LinkButton isactive={params.pathname === '/'} to='/' text={'DOCS'} /></h1></ListItemMenuBrand>
+        <ListItemMenuElement onClick={onClick} ><com.LinkButton isactive={params.pathname === '/js-content'} to={'/js-content'} text={'JAVASCRIPT'} /></ListItemMenuElement>
+        <ListItemMenuElement onClick={onClick} ><com.LinkButton isbutton='link' isactive={params.pathname === '/css-content'} to={'/css-content'} text={'CSS'} /></ListItemMenuElement>
       </UnorderListMenu>
     </ResponsiveMenuWrapper>
   )
