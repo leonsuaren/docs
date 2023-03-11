@@ -44,13 +44,18 @@ const isButton = ({ isbutton }) => {
     margin: 20px;
     font-weight: 600;
     `
+  } else if (isbutton === 'link') {
+    return css`
+    :visited {
+      color: blue;
+    }
+  `
   }
 }
 
 export const LinkStyled = styled(Link)`
     text-decoration: none;
     cursor: pointer;
-    font-family: "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     ${onIsActiveLink};
     ${isButton};
 `;

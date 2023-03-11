@@ -6,7 +6,7 @@ export const Container = styled.div`
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  z-index: -1;
+  z-index: 0;
   position: relative;
 
   @media (min-width: 992px) {

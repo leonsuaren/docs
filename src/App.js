@@ -13,10 +13,13 @@ function App() {
       <Router>
         <com.Navigation />
         <Routes>
-          <Route path='/' element={<vie.Home />}/>
-          <Route path='css-content' element={<vie.CssContent />}/>
+          <Route path='/' element={<vie.Home />} />
+          <Route path='css-content' element={<vie.CssContent />} />
+          <Route path='css-content/media-queries' element={<vie.Media />} />
+          <Route path='css-content/display' element={<vie.Display />} />
           <Route path='js-content' element={<vie.JsContent />} />
-          <Route path='examples' element={<vie.Examples />}/>
+          <Route path='js-content/functions' element={<vie.Functions />} />
+          <Route path='examples' element={<vie.Examples />} />
         </Routes>
       </Router>
     </ThemeProvider>
